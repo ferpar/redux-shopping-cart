@@ -2,10 +2,10 @@ import React from "react";
 import classNames from "classnames";
 import { useAppSelector, useAppDispatch } from "../../app/hooks";
 import {
-  checkoutCart,
   getTotalPrice,
   removeFromCart,
   updateQuantity,
+  checkoutCart,
 } from "./cartSlice";
 import styles from "./Cart.module.css";
 
@@ -59,11 +59,11 @@ export function Cart() {
                   onBlur={(e) => onQuantityChanged(e, id)}
                 />
               </td>
-              <td>{products[id].price}</td>
+              <td>${products[id].price}</td>
               <td>
                 <button
-                  aria-label={`Remove ${products[id].name} from Shopping Cart`}
                   onClick={() => dispatch(removeFromCart(id))}
+                  aria-label={`Remove ${products[id].name} from Shopping Cart`}
                 >
                   X
                 </button>

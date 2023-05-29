@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
-import { receivedProducts } from "./productSlice";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { receivedProducts } from "./productsSlice";
 import { addToCart } from "../cart/cartSlice";
 import { getProducts } from "../../app/api";
 import styles from "./Products.module.css";

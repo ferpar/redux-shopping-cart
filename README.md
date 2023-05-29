@@ -15,7 +15,11 @@ npm run dev
 
 The `lessons/` folder contains a unique folder for each lesson including a README with a description of that lesson and any files that were modified as part of that lesson.
 
+<<<<<<< HEAD
 The final state of the application can also be found in the `final` branch.
+=======
+The final state of the application can also be found in the `testing-final` branch.
+>>>>>>> df7e8744e0d0e10d9564c9ea9d618a04eef66458
 
 ## Technologies
 
